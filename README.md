@@ -1,6 +1,23 @@
-# esp32-ideas
 ESP32 Wi‑Fi Weather Station
-dling; consider solid-state relay for AC loads.
+What it does: pulls data from a weather API (or uses a local sensor array) and displays temp/humidity/pressure on a web page or OLED.
+Why affordable: ESP32 (~$5–$10), DHT22 or BME280 sensor, optional SSD1306 OLED.
+Extras: add MQTT to publish data, or a small solar-powered enclosure.
+Smart Plant Monitor (Soil Moisture + Light)
+What it does: monitors soil moisture, light levels, and temperature; alerts when the plant needs water.
+Why affordable: cheap soil moisture sensors, a photoresistor or TSL2561, ESP32/ESP8266, optional low-power sleeping to extend battery life.
+Extras: automate a water pump or valve via relay.
+ESP32 Pocket IoT Camera (Low-res)
+What it does: captures a few megapixel images and serves them over Wi‑Fi; can do streaming at low frame rate.
+Why affordable: ESP32-CAM module combines camera and MCU, typically under $10.
+Caution: limited power and bandwidth; good for simple remote snapshots.
+ESP32 Air Quality Monitor
+What it does: reads gas/particle sensors (e.g., MQ series for smoke, CCS811 for air quality) and sends data to a dashboard or MQTT broker.
+Why affordable: cheap air sensors available; ESP32 handles Wi‑Fi.
+Extras: log data to a microSD or publish to Home Assistant.
+Smart Light Switch (Wi‑Fi Relay)
+What it does: controls a light or outlet via web/mobile; can be integrated with MQTT or Home Assistant.
+Why affordable: ESP32 with a 5V relay module; minimal components.
+Safety: use proper isolation and power handling; consider solid-state relay for AC loads.
 ESP32 Bluetooth Beacon Collector
 What it does: scans for Bluetooth beacons (iBeacon/Eddystone) and forwards data to the cloud.
 Why affordable: ESP32 has built-in Bluetooth; simple data handling and display.
